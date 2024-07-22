@@ -26,3 +26,26 @@ function showPopup(bool) {
     document.getElementById('popup').style.visibility = 'hidden'
   }
 }
+
+function redirectTo(){
+
+  document.getElementById("all_certificates").addEventListener('click', function(event) {
+    
+    let certification = event.target.id;
+
+    console.log(certification);
+
+    switch (certification) {
+      case "jnj":
+        window.open("pdf_files/TTT Certificate.pdf", "_blank")
+        break;
+    
+      case "coursera":
+        window.open("https://www.coursera.org/user/fcd7c2ab76910daaaf680e93536897c0", "_blank")        
+        break;
+    }
+  });
+
+}
+
+

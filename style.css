@@ -5,14 +5,15 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-color:  #7600bc;
+  background-color:  #003140;
+  /*Alternate color 0b7abb */
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
   margin-top:-1cm;
-  padding-top: 2cm;
+  padding-top: 1.5cm;
   padding-bottom: 2cm;
-  height: 5mm;
+  height: 10mm;
  }
 
 .topmenu {
@@ -33,6 +34,7 @@ body {
 .topdiv {
   float: right;
   padding-right: 1cm;
+  padding-top: 1cm;
 }
 
 .profile_name {
@@ -64,7 +66,7 @@ h2 {
   font-size: 50px;
   text-align: center;
   float: left;
-  color: #7600bc;
+  color: #003140;
   margin: 30px;
   margin-left: 60px;
   margin-top: 40px;
@@ -98,13 +100,14 @@ h2 {
 #about-me h1 {
   font-size: 65px;
   margin-top: 90px;
-  color: #7600bc;
+  color: #003140;
 }
 
 #about-me p {
   font-size: 25px;
-  color: rgb(128, 128, 128);
+  color: #003140;
   margin-top: -1cm;
+  text-align:left;
 }
 
 .profile_image {
@@ -128,8 +131,12 @@ h2 {
   border-radius: 6px;
   text-align: center;
   margin: 50px;
+  margin-bottom: 10px;
+  /* top, right, bottom, left */
+  /* margin: 50px, 50px, 50px, 50px; */
   padding: 10px;
   width: 2in;
+  height:1in;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
 }
@@ -169,7 +176,8 @@ h2 {
 }
 
 .projects-container hr {
-  border: 1px solid lightgray;
+  /* border: 1px solid #0b7abb; */
+  border: 1px solid #0b7abb63;
   width: 75%;
   margin-left: 5cm;
 }
@@ -179,8 +187,24 @@ h2 {
   padding-bottom: 5px;
 }
 
+.ed-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+  /* font-size: 20px */
+}
+
 .project-card h3 {
   font-size: 25px;
+  margin-left: 30px;
+}
+
+.ed-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.ed-card p{
+  font-size: 20px;
   margin-left: 30px;
 }
 
@@ -189,9 +213,9 @@ h2 {
   margin-left: 30px;
 }
 
-/* Recommendations */
+/* certificates */
 
-.all_recommendations {
+.all_certificates {
   display: flex;
   align-items: center;
   margin-left: 1in;
@@ -200,9 +224,9 @@ h2 {
   padding: 20px;
 }
 
-.recommendation {
-  font-style: italic;
-  text-align: left;
+.certificate {
+  font-style: normal;
+  text-align: center;
   width: 21.875rem;
   padding: 1rem;
   background-color: #fff;
@@ -212,11 +236,16 @@ h2 {
   margin: 10px;
   border:1px solid gray;
   font-size: 18px;
-  height:150px
+  height:30px
 }
 
-.recommendation span {
-  color: #7600bc;
+.certificate:hover{
+  background-color: #0b7abb;
+  cursor:pointer;
+}
+
+.certificate span {
+  color: #003140;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -227,7 +256,7 @@ h2 {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: #7600bc;
+  background-color: #003140;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,7 +270,7 @@ h2 {
 
 .popup {
   width:400px;
-  background-color: #e8bcf0;
+  background-color: #0b7abb;
   border-radius: 3mm;
   top: 50%;
   left:50%;
@@ -258,8 +287,8 @@ h2 {
 
 .popup button {
   background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  border: 1px solid #003140;
+  color: #003140;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -272,8 +301,8 @@ h2 {
 
 .popup button:hover {
   background-color: #fff;
-  border: 2px solid #7600bc;
-  color: #7600bc;
+  border: 2px solid #003140;
+  color: #003140;
   display: block;
   font-weight: bolder;
   text-align: center;
@@ -281,7 +310,7 @@ h2 {
   margin-left: 25%;
 }
 
-/* Recommendation Form */
+/* certificate Form */
 
 input, textarea {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
@@ -304,8 +333,8 @@ fieldset {
 
 button {
   background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  border: 1px solid #003140;
+  color: #003140;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -316,8 +345,8 @@ button {
 }
 
 button:hover {
-  background-color: #7600bc;
-  border: 1px solid #7600bc;
+  background-color: #003140;
+  border: 1px solid #003140;
   color: #fff;
   display: block;
   border-radius: 6px;
